@@ -7,20 +7,28 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/gpssiiii"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/gpssiiii"
         android:supportsRtl="true"
         android:theme="@style/Theme.Evaluacion2"
         tools:targetApi="31">
+
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCGAOa2w-6vCuX7sI9Y2Whbq_IWGfSepvQ"
+            />
+
+
         <activity
             android:name=".mapa"
             android:exported="false" />
         <activity
-            android:name=".splash"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".splash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
